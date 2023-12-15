@@ -48,7 +48,7 @@ class linhasController{
 
    try{
         
-       const vagaNova = await linhas.create(req.body);
+       const linhaNova = await linhas.create(req.body);
       
        res.status(201).send({message:'Linha cadastrada com sucesso!', linhas:linhaNova});
    }
