@@ -6,7 +6,7 @@ const routes = express.Router();
 
 routes.get("/formulario", linhasController.listarLinhas);
 routes.get("/formulario/:id", linhasController.listarLinhasPorId);
-routes.post("/formulario", linhasController.atualizarlinhas);
-routes.put("/formulario/:id", linhasController.cadastrarLinha);
+routes.post("/formulario", linhasController.cadastrarLinha);
+routes.put("/formulario/:id", linhasController.atualizarlinhas);
 
 export default routes;
